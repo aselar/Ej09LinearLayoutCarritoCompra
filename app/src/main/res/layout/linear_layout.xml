@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.android.asel.ej09linearlayoutcarritocompra.LinearLayoutActivity"
-    android:orientation="vertical"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
 
     <TextView
         android:text="@string/carrito"
@@ -16,7 +16,7 @@
         android:id="@+id/textViewCarrito" />
 
     <TextView
-        android:text="TextView"
+        android:text=""
         android:height="1dp"
         android:background="@color/colorText"
         android:layout_width="match_parent"
@@ -24,14 +24,123 @@
         android:id="@+id/textViewLinea1" />
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/producto1"
+                android:textColor="@color/colorText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProducto1"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"/>
+
+            <EditText
+                android:background="@color/colorBackgroundEditText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:hint=""
+                android:id="@+id/editText1"/>
+
+            <TextView
+                android:text="@string/unidades"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUnidades1"
+                android:paddingStart="0dp"
+                android:paddingEnd="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/producto2"
+                android:textColor="@color/colorText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProducto2"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"/>
+
+            <EditText
+                android:background="@color/colorBackgroundEditText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:hint=""
+                android:id="@+id/editText2"/>
+
+            <TextView
+                android:text="@string/unidades"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUnidades2"
+                android:paddingStart="0dp"
+                android:paddingEnd="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/producto3"
+                android:textColor="@color/colorText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProducto3"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"/>
+
+            <EditText
+                android:background="@color/colorBackgroundEditText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:hint=""
+                android:id="@+id/editText3"/>
+
+            <TextView
+                android:text="@string/unidades"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUnidades3"
+                android:paddingStart="0dp"
+                android:paddingEnd="8dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:text="@string/botonenviarcorreo"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonEnviarCorreo"/>
 
     </LinearLayout>
 
     <TextView
-        android:text="TextView"
+        android:text=""
         android:height="1dp"
         android:background="@color/colorText"
         android:layout_width="match_parent"
@@ -46,7 +155,7 @@
     </LinearLayout>
 
     <TextView
-        android:text="TextView"
+        android:text=""
         android:height="1dp"
         android:background="@color/colorText"
         android:layout_width="match_parent"
