@@ -148,9 +148,87 @@
         android:id="@+id/textViewLinea2"/>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/importe"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewImporte"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="@string/precio1"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPrecio1"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/iva"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewIva"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="@string/precio2"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPrecio2"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/total"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTotal"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="@string/precio3"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPrecio3"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -161,5 +239,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewLinea3" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/botonvolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonVolver"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            style="none"/>
+
+        <Button
+            android:text="@string/botonconfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonConfirmar"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            style="none"/>
+
+    </LinearLayout>
 
 </LinearLayout>
